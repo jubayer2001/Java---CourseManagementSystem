@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminPageController">
+   <center>
+      <AnchorPane prefHeight="428.0" prefWidth="708.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="myLabel" alignment="CENTER" layoutX="1.0" layoutY="14.0" prefHeight="47.0" prefWidth="600.0" text="Admin Page" textFill="#578ea8">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Button layoutX="64.0" layoutY="234.0" mnemonicParsing="false" onAction="#viewMethod" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #578ea8;" text="View" />
+            <Button layoutX="64.0" layoutY="276.0" mnemonicParsing="false" onAction="#viewDetailsMethod" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #578ea8;" text="View Details" />
+            <Button layoutX="64.0" layoutY="190.0" mnemonicParsing="false" onAction="#addUserMethod" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #578ea8;" text="Add User" />
+            <Button layoutX="502.0" layoutY="25.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #9da6a0;" text="Logout" textFill="#315768" />
+            <Button layoutX="64.0" layoutY="100.0" mnemonicParsing="false" onAction="#searchMethod" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #578ea8;" text="search">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="64.0" layoutY="145.0" mnemonicParsing="false" onAction="#addCourseMethod" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #578ea8;" text="add Course" />
+            <Line endX="136.0" layoutX="301.0" layoutY="69.0" startX="-146.0" />
+            <TextArea layoutX="274.0" layoutY="130.0" prefHeight="225.0" prefWidth="298.0" />
+            <Label layoutX="363.0" layoutY="88.0" text="All Courses">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="64.0" layoutY="317.0" mnemonicParsing="false" onAction="#registerForCourseMethod" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #578ea8;" text="Register For Course">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="64.0" layoutY="363.0" mnemonicParsing="false" onAction="#offerCourseMethod" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #578ea8;" text="Offer Course">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
